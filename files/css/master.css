@@ -1,0 +1,1596 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #252B33;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+::-moz-selection {
+	background: #F16C6A;
+	color: #FFF;
+	text-shadow: none;
+}
+
+::selection {
+	background: #F16C6A;
+	color: #FFF;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 0px;
+	border: 0;
+	border: none;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* @group Typography */
+   
+   /* @group Custom Webfonts */
+         	
+	@font-face {
+	    font-family: CallunaBold;
+	    src: url('./webfonts/calluna-bold-webfont.eot');
+	    src: url('./webfonts/calluna-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('./webfonts/calluna-bold-webfont.woff') format('woff'),
+	         url('./webfonts/calluna-bold-webfont.ttf') format('truetype'),
+	         url('./webfonts/calluna-bold-webfont.svg#CallunaBold') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaBoldItalic;
+	    src: url('./webfonts/calluna-boldit-webfont.eot');
+	    src: url('./webfonts/calluna-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('./webfonts/calluna-boldit-webfont.woff') format('woff'),
+	         url('./webfonts/calluna-boldit-webfont.ttf') format('truetype'),
+	         url('./webfonts/calluna-boldit-webfont.svg#CallunaBoldItalic') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaItalic;
+	    src: url('./webfonts/calluna-it-webfont.eot');
+	    src: url('./webfonts/calluna-it-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('./webfonts/calluna-it-webfont.woff') format('woff'),
+	         url('./webfonts/calluna-it-webfont.ttf') format('truetype'),
+	         url('./webfonts/calluna-it-webfont.svg#CallunaItalic') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaLghtRegular;
+	    src: url('./webfonts/calluna-light-webfont.eot');
+	    src: url('./webfonts/calluna-light-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('./webfonts/calluna-light-webfont.woff') format('woff'),
+	         url('./webfonts/calluna-light-webfont.ttf') format('truetype'),
+	         url('./webfonts/calluna-light-webfont.svg#CallunaLghtRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaRegular;
+	    src: url('./webfonts/calluna-regular-webfont.eot');
+	    src: url('./webfonts/calluna-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('./webfonts/calluna-regular-webfont.woff') format('woff'),
+	         url('./webfonts/calluna-regular-webfont.ttf') format('truetype'),
+	         url('./webfonts/calluna-regular-webfont.svg#CallunaRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaSmBdRegular;
+	    src: url('./webfonts/calluna-semibold-webfont.eot');
+	    src: url('./webfonts/calluna-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('./webfonts/calluna-semibold-webfont.woff') format('woff'),
+	         url('./webfonts/calluna-semibold-webfont.ttf') format('truetype'),
+	         url('./webfonts/calluna-semibold-webfont.svg#CallunaSmBdRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaSmBdItalic;
+	    src: url('./webfonts/calluna-semiboldit-webfont.eot');
+	    src: url('./webfonts/calluna-semiboldit-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('./webfonts/calluna-semiboldit-webfont.woff') format('woff'),
+	         url('./webfonts/calluna-semiboldit-webfont.ttf') format('truetype'),
+	         url('./webfonts/calluna-semiboldit-webfont.svg#CallunaSmBdItalic') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: BebasNeueRegular;
+	    src: url('./webfonts/BebasNeue-webfont.eot');
+	    src: url('./webfonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('./webfonts/BebasNeue-webfont.woff') format('woff'),
+	         url('./webfonts/BebasNeue-webfont.ttf') format('truetype'),
+	         url('./webfonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	/* @end */
+			
+	body {
+		background-color: #e9edef;
+		font-size: 1.500rem; /* 24px */
+		line-height: 2.25rem;
+		margin: 0 auto;
+		font-weight: 400;
+	}
+	
+	h1 {
+		font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+		font-size: 4.875rem;
+		font-weight: normal;
+		line-height: 5.625rem;
+		margin-top: 3.375rem;
+		margin-bottom: 2.25rem;
+	}
+	
+	h2 {
+		font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+		font-size: 3.438rem;
+		font-weight: normal;
+		line-height: 4.5rem;
+		margin-top: 6.75rem;
+		margin-bottom: 2.25rem;
+	}
+	
+	h3 {
+		font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+		font-size: 2.125rem;
+		font-weight: normal;
+		line-height: 2.25rem;
+/*		margin-top: 4.5rem;*/
+		margin-top: 6.75rem;
+		margin-bottom: 2.25rem;
+	}
+	
+	h4 {
+		color: #3C4653;
+		font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+		font-size: 1.500rem;
+		font-weight: normal;
+		line-height: 2.25rem;
+		margin-top: 2.25rem;
+		margin-bottom: 2.25rem;
+	}
+	
+	h5 {
+		font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+		font-size: 1.188rem;
+		font-weight: normal;
+		line-height: 2.25rem;
+		margin-top: 2.25rem;
+		margin-bottom: 0;
+	}
+	
+	p, ul, ol, pre, table, blockquote {
+		font-family: CallunaLghtRegular, Georgia, serif;
+		font-weight: normal;
+		margin-top: 2.25rem;
+		margin-bottom: 2.25rem;
+	}
+	
+	ul {
+		padding-left: 0;
+	}
+	
+	.intro {
+		font-family: CallunaRegular, Georgia, serif;
+		font-size: 1.688rem;
+		line-height: 2.8125rem;
+	}
+	
+	.micro {
+		font-size: 1.188rem;
+		line-height: 2.25rem;
+	}
+	
+	.nano {
+		font-size: 0.813rem;
+	}
+	
+	a {
+		color: #EF5350;
+		font-family: CallunaLghtRegular, Georgia, serif;
+		font-weight: normal;
+		line-height: 2.25rem;
+		margin-top: 2.25rem;
+		margin-bottom: 2.25rem;
+		text-decoration: none;
+	}
+	
+	a:hover,
+	a:focus {
+		color: #B51A17;
+		text-decoration: underline;
+	}
+	
+	.italics {
+		font-family: CallunaItalic, Georgia, serif;
+	}
+	
+	blockquote {
+		border-left: 4px solid #EF5350;
+		font-size: 1.313rem;
+		margin-left: 0;
+		margin-top: 3.375rem;
+		padding-left: 1.6875rem;
+		margin-right: 0;
+	}
+	
+	blockquote p,
+	.post blockquote p {
+		font-family: CallunaItalic, Georgia, serif;
+		color: #3c4653;
+		margin-bottom: 1.125rem;
+		margin-top: 2.25rem;
+		padding-top: 0.5625rem;
+	}
+	
+	.dark blockquote p {
+		color: #F3F5F6;
+	}
+	
+	blockquote footer p,
+	.post blockquote footer p {
+		font-family: CallunaLghtRegular, Georgia, serif;
+	}
+	
+	figcaption {
+		color: #3C4653;
+		font-family: CallunaItalic, Georgia, serif;
+		font-size: 1.063rem;
+		margin-top: 0.5625rem;
+		text-align: center;
+	}
+	
+	hr:after {
+		color: #252B33;
+		content: "â˜…â˜…â˜…";
+		font-size: 0.938rem;
+	}
+
+	/* @end */
+	
+/* @end */
+
+
+/* @group Shared Styles */
+
+	.cta-button {
+
+	}
+	
+	.cta-button:hover,
+	.cta-button:focus,
+	.cta-button.secondary:hover,
+	.cta-button.secondary:focus,
+	.icon:hover,
+	.icon:focus {
+		background-color: #222;
+		background-color: rgba(34,34,34,0.9);
+	}
+	
+	
+	#mc_embed_signup form {
+		padding: 0px;
+	}
+	
+	
+	#mc_embed_signup form#mc-embedded-subscribe-form {
+		padding: 0px;
+	}
+	
+	#mc_embed_signup #mc-embedded-subscribe-form input.email {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 0;
+		padding-right: 0;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		position: relative;
+		width: 70%;
+		font-size: 1.063rem;
+		text-indent: 1rem;
+		margin-bottom: 0;
+		border-color: #C4CBD4;
+	}
+	
+	
+	
+	#mc_embed_signup #mc-embedded-subscribe-form input.cta-button {
+		background-color: #F16C6A;
+		border: 1px solid #EF5350;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		color: #fff;
+		display: inline-block;
+		text-align: center;
+		padding: 1em 0 1em 0; /* 18/24 12/24 */
+		text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+		filter: dropshadow(color=#000000, offx=0, offy=-1);
+		width: 40%;
+		font-size: 1.063rem;
+		height: 67px;
+		text-decoration: none;
+		vertical-align: baseline;
+		text-transform: uppercase;
+		-webkit-transition: background-color 0.2s ease;
+		-moz-transition: background-color 0.2s ease;
+		-ms-transition: background-color 0.2s ease;
+		-o-transition: background-color 0.2s ease;
+		transition: background-color 0.2s ease;
+	}
+		
+	
+	#mc_embed_signup #mc-embedded-subscribe-form input.email:focus,
+	#mc_embed_signup #mc-embedded-subscribe-form input.email textarea:focus {
+		outline-color: #333;
+		outline: 2px solid #333;
+		border-color: #333;
+		outline-offset: -2px;
+	}
+	
+	#mc_embed_signup #mc-embedded-subscribe-form input.email:invalid, 
+	#mc_embed_signup #mc-embedded-subscribe-form input.email:invalid {
+		background-color: #fff;
+	}
+	
+	
+	figure {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 4.5rem;
+		margin-bottom: 4.5rem;
+	}
+	
+	figure.tight {
+		margin-top: 2.25rem;
+		margin-bottom: 2.25rem;
+	}
+	
+	figure img {
+		width: 100%;
+		height: auto;
+	}
+
+	.main-content .case-block {
+		padding-top: 9rem;
+		padding-bottom: 9rem;
+	}
+	
+	.main-content .article-content {
+		padding-bottom: 9rem;
+	}
+	
+	.dark {
+		background-color: #1A1E23;
+		color: #F3F5F6;
+	}
+	
+	.mid {
+		background-color: #F4F6F7;
+	
+	}
+	
+	.light {
+		background-color: #FFF;
+	}
+	
+	.mute {
+		color: #acb5c3;
+	}
+	
+	.dark .mute {
+		color: #4D5A6A;
+	}
+	
+	.center {
+		text-align: center;
+	}
+	
+	.strikethrough {
+		text-decoration: line-through;
+	}
+	
+	.hero-spread figure {
+		margin: 0;
+	}
+	
+	blockquote.pullquote {
+		border: none;
+		text-align: center;
+		color: #B51A17;
+		font-family: CallunaRegular, Georgia, serif;
+		font-size: 2.125rem; /* 34px */
+		margin-bottom: 2.250rem;
+		margin-top: 1.125rem;
+		padding-left: 0;
+		line-height: 3.375rem; /* 54px */
+	}
+	
+	blockquote.pullquote:before,
+	blockquote.pullquote:after {
+		margin: 1.125rem auto;
+	}
+	
+	blockquote.pullquote:before, 
+	blockquote.pullquote:after {
+		content: "";
+		display: block;
+		width: 10%;
+		height: 1px;
+		background: #999999;
+	}
+	
+	blockquote header {
+		font-family: CallunaSmBdRegular, Georgia, serif;
+	}
+	
+	blockquote p.quote-with-header {
+		margin-top: 0.5625rem;
+	}	
+
+	
+	.soft-border {
+		border: 1px solid #F3F5F6;
+	}
+	
+	.drop-shadow {
+		-moz-box-shadow:    1px 1px 1px 0px #E9EDEF;
+		-webkit-box-shadow: 1px 1px 1px 0px #E9EDEF;
+		box-shadow:         1px 1px 1px 0px #E9EDEF;
+	}
+	
+	.micro-block h3 {
+		font-size: 1.688rem;
+		margin-bottom: 0.5625rem;
+		margin-top: 0;
+	}
+	
+	.micro-block p {
+		margin-top: 0;
+	}
+	
+
+/* @end */
+
+/* @group Site Header */
+
+	#masthead-wrapper {	
+		min-height: 15.938rem;
+	}
+	
+	#masthead-wrapper .micro {
+		margin-top: 109px;
+	}
+	
+	#masthead-wrapper ul#menu-main {
+		list-style: none;
+		padding: 0;
+		margin-top: 109px;
+		margin-left: 0;
+		margin-right: 51px;
+		text-align: right;
+	}
+	
+	#masthead-wrapper ul#menu-main li {
+		margin-bottom: 0;
+		margin-left: 2.25rem;
+		margin-top: 0;
+		display: inline-block;
+	}
+	
+	#masthead-wrapper ul#menu-main li:first-child {
+		margin-left: 0;
+	}
+	
+	#masthead-wrapper ul#menu-main li a {
+		color: #252B33;
+		font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+		font-size: 1.500rem;
+		font-weight: normal;
+		line-height: 2.25rem;
+		margin-top: 2.25rem;
+		margin-bottom: 0;
+		text-decoration: none;
+	}
+	
+	#masthead-wrapper nav ul#menu-main li a:hover,
+	#masthead-wrapper nav ul#menu-main li a:focus {
+		border-bottom: 2px solid #252B33;
+		-webkit-transition: border 0.2s ease;
+		-moz-transition: border 0.2s ease;
+		-ms-transition: border 0.2s ease;
+		-o-transition: border 0.2s ease;
+		transition: border 0.2s ease;
+	}
+	
+	
+	#masthead-wrapper nav ul#menu-main li.current_page_item a,
+	#masthead-wrapper nav ul#menu-main li.current_page_parent a,
+	#masthead-wrapper nav ul#menu-main li.current-page-ancestor a,
+	masthead-wrapper nav ul#menu-main li a:focus {	
+		border-bottom: 2px solid #252B33;
+	}
+	
+	#masthead-wrapper .logo-wrapper {
+		height: 100%;
+		line-height: 247px;
+		text-align: center;
+	}
+	
+	a#logo {
+		margin: 0 0 0 -15%;
+		display: inline-block;
+	}
+	
+	a#logo img {
+		width: 80%;
+	}
+
+/* @end */
+
+
+/* @group Site Footer */	
+
+	footer#contact {
+		padding: 2.25rem 0;
+	}
+	
+	footer#contact ul.links a {
+		color: #252B33;
+		font-size: 0.938rem;
+		text-decoration: none;
+	}
+	
+	footer#contact ul.links li {
+		display: inline;
+	}
+	
+	footer#contact ul.links a:after {
+		content: "·";
+		padding: 0 .35em 0 .5em
+	}
+	
+	footer#contact ul.links a.last:after {
+		content: none;
+		padding-right: 0;
+	}
+	
+	footer#contact ul.links ul {
+/*		display: inline-block;*/
+/*		float: left;*/
+		list-style: none;
+		padding: 0;
+	}
+	
+	footer#contact .copyright {
+		text-align: right;
+	}
+
+/* @end */
+
+
+/* @group Project List */
+
+	.project-list,
+	.post {
+		padding-left: 0;
+		list-style: none;
+		margin-top: 0;
+	}
+	
+	.project-list li {
+		border: 1px solid #DBE0E6;
+/*		height: 468px;*/
+		margin-bottom: 2.25rem;
+		margin-top: 0;
+	}
+
+	.project-list .project-thumb {
+		display: inline-block;
+		width: 27.5%;
+		margin-top: 8.3333333334%;
+		margin-bottom: 8.3333333334%;
+	}
+	
+	.project-list .project-thumb img {
+		width: 100%;
+	}
+	
+	.project-desc {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 6.2500000001%;
+	}
+	
+	.project-desc h2,
+	.project-desc h4 {
+		margin-bottom: 0;
+	}
+	
+	.project-desc p {
+		margin-top: 0.5625rem;
+		margin-bottom: 1.6875rem;
+	}
+	
+	.project-desc h2 {
+		margin-top: 0.5625rem;
+	}
+	
+	
+
+/* @end */
+
+
+/* @group Article Index */
+	
+	.post {
+		padding-left: 0;
+	}
+	
+	.post li.post-summary {
+		border-left: 1px solid #DBE0E6;
+		border-right: 1px solid #DBE0E6;
+		min-height: 29.250rem;
+		margin-bottom: 0;
+		margin-top: 0;
+		overflow: hidden;
+	}
+	
+	.post li.post-summary:first-of-type {
+		border-top: 1px solid #DBE0E6;
+	}
+	
+	.post li.post-summary:last-of-type {
+		border-bottom: 1px solid #DBE0E6;
+	}
+	
+	.post article {
+		padding-bottom: 4.5rem;
+		margin-top: 1.6875rem;
+		border-bottom: 1px solid #C4CBD4;
+	}
+	
+	.post li:first-of-type article {
+		margin-top: 4.5rem;
+	}
+	
+	.post li:last-of-type article {
+		border: none;
+		padding-bottom: 9rem;
+	}
+	
+	.post-summary h2 {
+		margin-top: 1.125rem;
+		margin-bottom: 0.5625rem;
+	}
+	
+	.post .post-summary header img {
+		margin-top: 1.6875rem;
+		margin-bottom: 2.25rem;
+	}
+	
+/*	.post h5 {
+		color: #ACB5C3;
+	}*/
+	
+	.post-summary p {
+		margin-bottom: 1.6875rem;
+		margin-top: 1.125rem;
+	}
+		
+	.post p.micro {
+		color: #3C4653;
+		margin-bottom: 1.6875rem;
+		margin-top: 0;
+	}
+	
+	.post header img {
+		margin-bottom: 0;
+		margin-top: 52px;
+		width: 100%;
+	}
+	
+/* @end */
+
+
+/* @group Single Blog Post */
+	
+	.post.article-content header {
+		padding-bottom: 0;
+	}
+	
+	.post.article-content .body-content {
+		margin-top: 0;
+	}
+	
+	.post.article-content header h1 {
+		margin-top: 1.125rem;
+		margin-bottom: 0;
+	}
+	
+	.post.article-content h5 {
+		margin-top: 144px;
+	}
+		
+	.discuss {		
+		background-color: #F3F5F6;
+		border: 1px solid #DBE0E6;
+		margin-top: 4.5rem;
+	}
+	.discuss img {
+		margin: 2.25rem 0 2.25rem 2.25rem;
+	}
+	
+	.discuss img,
+	.discuss p {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.post .discuss p {
+		margin-bottom: 0;
+		margin-left: 19px;
+	}
+	
+	.up-next {
+		padding-bottom: 2.25rem;
+		padding-top: 2.25rem;
+	}
+	
+	.up-next a {
+		text-align: right;
+		text-decoration: none;
+	}
+	
+	.up-next a:after {
+		content: " ";
+	}
+	
+/* @end */
+
+
+/* @group About */
+	
+		section.hero-spread .wrapper {
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+		}
+		
+		section.hero-spread .wrapper h1 {
+			font-size: 4.313rem;
+			line-height: 5.625rem;
+			position: absolute;
+			top: 50%;
+			margin-top: 0;
+			margin-bottom: 0;
+			transform: translateY(-50%);
+		}
+		
+		section.hero-spread .hero-wrapper {
+			display: inline-block;
+		}
+		
+		section.hero-spread .hero-wrapper img {
+			width: 100%;
+		}
+		
+		
+		section#opener h3 {
+			margin-top: 2.25rem;
+		}
+		
+		section#gallery figure {
+			margin: 0;
+		}
+		
+		
+		
+	section#testimonials footer p.micro {
+		margin-bottom: 2.25rem;
+		margin-top: 2.25rem;
+	}
+	
+	section#now-playing-reading {
+		text-align: center;
+	}
+	
+	section#now-playing-reading h2 {
+		margin-top: 0;
+		margin-bottom: 6.75rem;
+		text-align: center;
+	}
+	
+	section#now-playing-reading h5 {
+		margin-top: 0;
+	}
+	
+	section#now-playing-reading figure {
+		margin: 0;
+		margin-top: 4.5rem;
+	}
+	
+	section#now-playing-reading .now-playing,
+	section#now-playing-reading .now-reading {
+		background-color: #FFF;
+		padding-bottom: 4.5rem;
+		text-align: center;		
+		outline: 9px solid #DBE0E6;
+	}
+
+	section#now-playing-reading p {
+		margin-top: 1.125rem;
+	}
+	
+	section#now-playing-reading .author {
+		font-family: CallunaSmBdRegular, Georgia, serif;
+		font-size: 1.500rem;
+	}
+
+	section#awards ul {
+		font-size: 1.313rem;
+		padding-left: 0;
+	}
+
+/* @end */
+
+
+/* @group Case Study */
+
+	.hero-spread header h1 {
+		margin-top: 1.125rem;
+	}
+	
+	.hero-spread header h5 {
+		margin-top: 9rem;
+	}
+	
+	section.phase.case-block h2 {
+		margin-top: 1.125rem;
+	}
+	
+	.thumb-list {
+		margin-top: 2.25rem;
+		margin-bottom: 2.25rem;
+	}
+	
+	.thumb-list .image-wrapper {
+		position: relative;
+		height: 100%;
+		text-align: center;
+	}
+	
+	.thumb-list img {
+		width: 100%;
+	}
+	
+/*	.thumb-list .text-block h3 {
+		margin-top: 1.6875rem;
+		margin-bottom: 0;
+	}
+	
+	.thumb-list .text-block p {
+		margin-top: 1.125rem;
+		margin-bottom: 0;
+	}*/
+	
+	#my-role h2 {
+		margin-top: 0;
+	}
+	
+	#impact ul {
+		list-style-type: none;
+		padding: 0;
+		margin-top: 2em;
+		text-align: center;
+	}
+	
+	
+	#impact ul:before,
+	#impact ul:after {
+/*		margin: 1em auto;*/
+		margin: 1.125rem auto;
+	}
+	
+	#impact ul:before, 
+	#impact ul:after {
+		content: "";
+		display: block;
+		width: 10%;
+		height: 1px;
+		background: #999999;
+	}
+	
+	#impact ul h3 {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	
+
+/* @end */
+
+
+/* @group Helper Classes */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+	display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* @end */
+
+
+/* @group Media Queries */
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+/* @group Large, XLarge and above */
+
+
+@media only screen and (min-width: 1442px) {
+	
+	/* @group Large/XLarge Site header */
+	
+		#site-header {
+			position: absolute;
+			left: 0;
+			height: 100%;
+			text-align: center;
+		}
+		
+		#masthead-wrapper nav {
+			margin-top: 3.375rem;
+			margin-left: 5.9447983015%;
+		}
+		
+		a#logo {
+			margin: 0;
+			margin-top: 4.5rem;
+			margin-left: 1.6985138004%; /* 20% */
+		}
+		
+		#masthead-wrapper .micro {
+			padding-left: 75px;
+			margin-left: 0;
+			margin-right: 0;
+			margin-top: 4.5rem;
+		}
+		
+		#masthead-wrapper .logo-wrapper {
+			line-height: 0;
+			height: auto;
+		}
+		
+		#masthead-wrapper .logo-wrapper a#logo img {
+			width: 60%;
+		}
+		
+		#masthead-wrapper ul#menu-main {
+			margin: 0;
+			text-align: center;
+		}
+		
+		#masthead-wrapper ul#menu-main li {
+			display: block;
+			margin-left: 0;
+			margin-top: 1.125rem;
+			margin-bottom: 1.125rem;
+		}
+		
+		#masthead-wrapper ul#menu-main li:first-child {
+			margin-left: 0;
+		}
+	
+	/* @end */
+	
+	/* @group Large/XLarge Project List */
+	
+		.project-list li:first-of-type {
+			margin-top: 2.25rem;
+		}
+		
+	/* @end */
+	
+	/* @group Large/XLarge About */
+	
+		section#testimonials blockquote p {
+			font-size: 1.500rem;
+		}
+		
+		section#testimonials blockquote footer p.micro {
+			font-size: 1.313rem;
+		}
+		
+		section#now-playing-reading .now-playing, section#now-playing-reading .now-reading {
+		    background-color: #F3F5F6;
+		    outline: none;
+		}
+	
+	
+	/* @end */
+	
+	/* @group Large/XLarge Case Study */
+	
+
+	
+	
+	.thumb-list {
+		position: static;
+	}
+	
+	.thumb-list img {
+		position: static;
+		width: 100%;
+		transform: none;
+	}
+	
+	.thumb-list {
+		text-align: center;
+	}
+	
+	.thumb-list .text-block h3 {
+		font-size: 1.688rem;
+	}
+	
+	.thumb-list .text-block p {
+		margin-top: 1.125rem;
+	}
+	
+	
+	/* @end */
+	
+}
+
+/* @end */
+
+
+/* @group Desktop Only */
+
+@media only screen and (min-width: 1100px) and (max-width: 1441px) {
+	
+	.thumb-list img {
+		width: 80%;
+	}
+	
+	.amazon-prime-music #discovery figure.tight {
+		margin-top: 0;
+	}
+}
+
+/* @end */
+
+
+/* @group Tablets, Small Computers */
+
+@media only screen and (min-width: 0) and (max-width: 1099px) {
+	
+	/* @group Tablet Site Header */
+	
+		#masthead-wrapper {
+			height: auto;
+		}
+		
+		#masthead-wrapper .logo-wrapper {
+			line-height: 0;
+		}
+		
+		#masthead-wrapper a#logo {
+			margin-left: 0;
+			padding-bottom: 2.25rem;
+			padding-top: 2.25rem;
+		}
+		
+		#masthead-wrapper .micro {
+			margin-top: 0;
+			text-align: center;
+		}
+		
+		#masthead-wrapper ul#menu-main {
+		    margin-top: 0;
+		    margin-right: 0;
+		    margin-bottom: 3.375rem;
+		    padding: 0;
+		    text-align: center;
+		}
+	
+	/* @end */
+	
+	
+	/* @group Tablet Site Footer */
+	
+		footer#contact {
+			padding-top: 0;
+			text-align: center;
+		}
+		
+		footer#contact .copyright {
+		    text-align: center;
+		}
+	
+	/* @end */
+	
+	
+	/* @group Tablet Project List */
+	
+	.project-list {
+		text-align: center;
+		margin-bottom: 0;
+	}
+	
+	.project-list li {
+	    height: auto;
+	}
+	
+	.project-list .project-thumb {
+		display: block;
+		margin-top: 12.499995%;
+		margin-bottom: 0;
+	}
+	
+	.project-list .project-desc {
+		display: block;
+		text-align: center;
+		margin-top: 2.25rem;
+		margin-bottom: 12.499995%;
+		margin-left: 0;
+	}
+	
+	.post header img {
+		margin-top: 0;
+	}
+	
+	.post article {
+		margin-top: 2.25rem;
+		margin-bottom: 3.375rem;
+	}
+	
+	/* @end */
+	
+	/* @group Tablet About */
+	
+	section.hero-spread .wrapper h1 {
+		font-size: 3.438rem;
+		line-height: 4.5rem;
+	}
+	
+	/* @end */
+	
+	/* @group Tablet Case Study */
+	
+	.thumb-list .text-block {
+		text-align: center;
+	}
+	
+	/* @end */
+}
+
+
+/* @end */
+
+
+/* @group Mobile */
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+
+	/* @group Mobile Typography */
+	
+		body,
+		li {
+			font-size: 1.063rem;
+			line-height: 1.688rem;
+		}
+		
+		h1 {
+			font-size: 3.438rem;
+			line-height: 3.9375rem;
+			margin-bottom: 1.6875rem;
+		}
+		
+		h2 {
+			font-size: 2.438em;
+			line-height: 2.8125rem;
+			margin-top: 4.5rem;
+			margin-bottom: 0.5625rem;
+		}
+		
+		h3 {
+			font-size: 1.500rem;
+			line-height: 2.25rem;
+			margin-bottom: 0.5625rem;
+			margin-top: 3.375rem;
+		}
+		
+		h4 {
+			font-size: 1.063rem;
+			margin-bottom: 0.5625rem;
+		}
+		
+		h5 {
+			font-size: 1.063rem;
+			margin-bottom: 0.5625rem;
+		}
+		
+		p {
+			margin-top: 1.125rem;
+			margin-bottom: 1.125rem;
+		}
+		
+		ul {
+			margin-top: 1.125rem;
+			margin-bottom: 1.125rem;
+		}
+		
+		li {
+			margin-top: 0;
+			margin-bottom: 0.5625rem;
+		}
+		
+		.intro {
+			font-size: 1.188rem;
+			line-height: 2.25rem;
+		}
+		
+		.micro,
+		blockquote {
+			font-size: 1.063rem;
+			line-height: 1.6875rem;
+		}
+	
+	/* @end */
+	
+	/* @group Mobile Site Header */
+	
+		#masthead-wrapper ul#menu-main li a {
+			font-size: 1.313rem;
+		}
+		
+		#masthead-wrapper .logo-wrapper a img {
+			width: 100%;
+		}
+		
+		#masthead-wrapper .logo-wrapper a {
+			width: 25.507246377%
+		}
+		
+		#masthead-wrapper ul#menu-main {
+			margin-bottom: 1.125rem;
+		}
+	
+	/* @end */
+	
+	/* @group Mobile Project List */
+	
+		.project-list .logo-wrapper img {
+			width: 39.113428944%
+		}
+		
+		.project-list .project-thumb {
+			margin: 0 auto;
+			margin-top: 2.25rem;
+		}
+		
+		.project-list .project-desc {
+			margin-bottom: 2.25rem;
+		}
+		
+		.project-list .project-desc h2 {
+			margin-bottom: 1.125rem;
+		}
+		
+		.project-list .project-desc p {
+			margin-bottom: 1.125rem;
+		}
+	
+	/* @end */
+	
+	/* @group Mobile Single Blog Post */
+	
+		.main-content .article-content {
+		    padding-bottom: 4.5rem;
+		}
+		
+		.post.article-content header h1 {
+			margin-top: 4.5rem;
+		}
+		
+		.post .discuss {		
+			text-align: center;
+		}
+		
+		.post .discuss img {
+			margin: 2.25rem 0 1.125rem 0;
+		}
+		
+		.post .discuss p {
+			margin-bottom: 2.25rem;
+			margin-left: 0;
+		}
+		
+		.up-next {
+			padding-bottom: 0;
+			padding-top: 0;
+			margin-bottom: 2.25rem;
+		}
+		
+		.up-next a {
+			text-align: left;
+			margin-top: 0;
+		}
+		
+	/* @end */
+	
+	/* @group Mobile About */
+		
+		section#opener .case-block {
+			padding-top: 0;
+		}
+		
+		section.phase.case-block h2 {
+			margin-top: 0.5625rem;
+		}
+		
+		section#now-playing-reading .now-playing {
+			margin-bottom: 2.25rem;
+		}
+		
+		section#now-playing-reading .now-playing,
+		section#now-playing-reading .now-reading {
+			background-color: #F3F5F6;
+			outline: none;
+		}
+	
+	/* @end */
+	
+	/* @group Mobile Case Study  */
+	.main-content .case-block {
+		padding-top: 4.5rem;
+		padding-bottom: 4.5rem;
+	}
+	
+	blockquote.pullquote {
+		font-size: 1.500rem;
+		line-height: 2.25rem;
+	}
+	
+	/* @end */
+	
+	
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Print Styles */
+
+@media print,
+	   (-webkit-min-device-pixel-ratio: 1.25),
+	   (min-resolution: 1.25dppx),
+	   (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster:
+								   http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links that are fragment identifiers,
+	 * or use the `javascript:` pseudo protocol
+	 */
+
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid red;
+		page-break-inside: avoid;
+	}
+
+	/*
+	 * Printing Tables:
+	 * http://css-discuss.incutio.com/wiki/Printing_Tables
+	 */
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+/* @end */

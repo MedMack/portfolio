@@ -1,0 +1,23 @@
+/*
+Theme Name: Simon Pan UX Portfolio
+Theme URI: http://www.simonpan.com
+Description: A user experience designer portfolio theme.
+Version: 1.0
+Author: Simon Pan
+Author URI: http://www.simonpan.com
+*/
+
+/***All of the CSS***/
+
+/* import stylesheets and hide from ie/mac \*/
+@import url("css/normalize.css");
+@import url("css/master.css");
+@import url("css/gridset.css");
+/*@import url("css/gridset-ie-9.css");*/
+/*@import url("css/gridset-ie-lte8.css");*/
+@import url("css/ss-social.min.css");
+@import url("css/ss-standard.min.css");
+@import url("css/ie.css");
+
+/* end import/hide */
+
